@@ -1,0 +1,14 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[DMX_FindAddonByName]
+ @Name NVarChar (50)
+AS
+SELECT
+ *
+FROM
+ dbo.DMX_Addons
+WHERE
+ [Name] = @Name
+GO

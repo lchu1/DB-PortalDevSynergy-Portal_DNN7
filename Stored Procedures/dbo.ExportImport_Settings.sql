@@ -1,0 +1,10 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[ExportImport_Settings]
+AS
+BEGIN
+	SELECT * FROM dbo.[ExportImportSettings]
+END
+GO

@@ -1,0 +1,11 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[DMX_DeleteAddon]
+ @AddonKey NVARCHAR (50)
+AS
+DELETE FROM dbo.DMX_Addons
+WHERE
+ [AddonKey] = @AddonKey
+GO

@@ -1,0 +1,12 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[DMX_GetLastActionEvent]
+ @EntryId INT,
+ @Action VARCHAR(50)
+AS
+SELECT MAX(Datime) FROM dbo.DMX_Log
+WHERE EntryId=@EntryId
+AND Action=@Action
+GO

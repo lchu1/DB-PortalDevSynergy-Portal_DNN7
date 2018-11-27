@@ -1,0 +1,7 @@
+CREATE TABLE [dbo].[DMX_Numbers]
+(
+[Number] [int] NOT NULL
+) ON [PRIMARY]
+GO
+ALTER TABLE [dbo].[DMX_Numbers] ADD CONSTRAINT [PK_DMX_Numbers] PRIMARY KEY CLUSTERED  ([Number]) ON [PRIMARY]
+GO

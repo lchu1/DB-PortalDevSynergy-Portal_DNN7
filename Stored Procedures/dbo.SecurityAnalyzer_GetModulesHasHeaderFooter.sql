@@ -1,0 +1,11 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[SecurityAnalyzer_GetModulesHasHeaderFooter]
+AS
+BEGIN
+    SELECT * FROM dbo.[TabModules]
+        WHERE (Header IS NOT NULL AND CONVERT(NVARCHAR(MAX), Header) <> N'') OR (Footer IS NOT NULL AND CONVERT(NVARCHAR(MAX), Footer) <> N'')
+END
+GO

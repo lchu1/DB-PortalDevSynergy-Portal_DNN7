@@ -1,0 +1,14 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[DMX_GetProvider]
+ @ProviderID INT
+AS
+SELECT
+ *
+FROM
+ dbo.DMX_Providers
+WHERE
+ [ProviderID] = @ProviderID
+GO

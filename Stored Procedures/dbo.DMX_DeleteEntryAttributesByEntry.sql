@@ -1,0 +1,10 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[DMX_DeleteEntryAttributesByEntry]
+ @EntryId Int
+AS
+DELETE FROM dbo.DMX_EntryAttributes
+WHERE EntryID=@EntryID
+GO

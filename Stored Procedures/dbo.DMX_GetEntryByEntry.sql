@@ -1,0 +1,17 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[DMX_GetEntryByEntry]
+ @PortalId INT,
+ @Entry AS NVARCHAR(2000)
+AS
+SELECT
+ *
+FROM
+ dbo.DMX_Entries
+WHERE
+ PortalId=@PortalId
+AND
+ Entry=@Entry
+GO

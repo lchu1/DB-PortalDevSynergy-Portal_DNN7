@@ -1,0 +1,10 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[DMX_DeleteEntry]
+ @EntryId Int
+AS
+DELETE FROM dbo.DMX_Entries
+WHERE [EntryId] = @EntryId;
+GO

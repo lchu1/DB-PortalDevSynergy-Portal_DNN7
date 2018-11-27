@@ -1,0 +1,11 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[DMX_MoveLog]
+ @OldEntryId INT,
+ @NewEntryId INT
+AS
+UPDATE dbo.DMX_Log
+SET EntryId=@NewEntryId WHERE EntryId=@OldEntryId
+GO

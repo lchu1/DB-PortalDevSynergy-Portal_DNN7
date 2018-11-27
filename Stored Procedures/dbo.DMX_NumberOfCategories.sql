@@ -1,0 +1,11 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[DMX_NumberOfCategories]
+ @PortalId INT
+AS
+SELECT COUNT(*)
+FROM dbo.DMX_Categories c
+WHERE c.PortalId=@PortalId
+GO

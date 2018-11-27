@@ -1,0 +1,11 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[DMX_IsSuperUser]
+ @UserId INT
+AS
+SELECT ISNULL(IsSuperUser, 0) IsSuperUser
+ FROM dbo.Users
+ WHERE UserID=@UserId
+GO

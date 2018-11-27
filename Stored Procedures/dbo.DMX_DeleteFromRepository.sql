@@ -1,0 +1,11 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[DMX_DeleteFromRepository]
+ @BlobId Int
+AS
+DELETE FROM dbo.DMX_Repository
+WHERE
+ [BlobId] = @BlobId
+GO

@@ -1,0 +1,9 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[DMX_CleanUpDirectAccessKeys]
+AS
+DELETE FROM dbo.DMX_DirectAccessKeys
+WHERE Expires < GETDATE() OR Downloads < 1
+GO

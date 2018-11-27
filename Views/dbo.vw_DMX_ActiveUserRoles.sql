@@ -1,0 +1,12 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE VIEW [dbo].[vw_DMX_ActiveUserRoles]
+AS
+SELECT ur.UserID, ur.RoleID
+FROM dbo.UserRoles ur
+WHERE 
+ ISNULL(ur.EffectiveDate, DATEADD(day, -1, GETDATE())) < GETDATE()
+ AND ISNULL(ur.ExpiryDate, DATEADD(day, 1, GETDATE())) > GETDATE()
+GO

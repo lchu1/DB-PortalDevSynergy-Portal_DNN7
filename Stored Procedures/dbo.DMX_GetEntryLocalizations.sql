@@ -1,0 +1,11 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS ON
+GO
+CREATE PROCEDURE [dbo].[DMX_GetEntryLocalizations]
+ @EntryId INT
+AS
+SELECT *
+FROM dbo.DMX_EntriesML
+WHERE [EntryId] = @EntryId
+GO

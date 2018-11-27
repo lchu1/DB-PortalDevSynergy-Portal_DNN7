@@ -1,0 +1,18 @@
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_NULLS OFF
+GO
+
+
+CREATE PROCEDURE [dbo].[CHCNWEB_GetCompanyIDCount]
+
+@UserID int
+
+as
+
+SELECT     COUNT(DISTINCT CompanyID) AS [Count]
+FROM         _CHCN_COMPANY_VS
+WHERE     (UserID = @USERID) AND NULLIF(Company,' ') IS NOT NULL
+
+
+GO
