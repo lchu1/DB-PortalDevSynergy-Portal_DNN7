@@ -84,4 +84,7 @@ AS
 
 
 
+
+GO
+GRANT EXECUTE ON  [dbo].[CHCNPORTAL_Report_GetUserRolesByCompanyID] TO [CHCN-EB\shawnal]
 GO

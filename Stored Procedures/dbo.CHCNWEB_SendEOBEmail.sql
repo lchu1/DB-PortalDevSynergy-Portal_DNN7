@@ -39,7 +39,7 @@ BEGIN
         BEGIN
 
                         SELECT @message = FirstName+' '+ LastName+','+Char(10)+Char(10)+ 'This is an automatically generated notification for a new Remittance Advice (EOB) for tax id '+CompanyID+', that is now available for download from the Community Health Center Network Provider Network Web Portal.'+Char(10)+Char(10)+
-			'You can download this now by going to https://portal.chcnetwork.org.'+Char(10)+Char(10)+
+			'You can download this now by going to https://connect.chcnetwork.org.'+Char(10)+Char(10)+
 			'Once logged in, go to:'+Char(10)+Char(10)+
 			'Data and Report Downloads >> Remittance Advice'+Char(10)+Char(10)+
 			'Select the Date Paid and Check Number from the drop down list and click on the GO button,'+Char(10)+Char(10)+ 

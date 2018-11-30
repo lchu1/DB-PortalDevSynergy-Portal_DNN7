@@ -4,7 +4,7 @@ CREATE TABLE [dbo].[RedirectMessages]
 [UserId] [int] NULL,
 [TabId] [int] NULL,
 [MessageText] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
-[CreatedOnDate] [datetime] NOT NULL CONSTRAINT [DF__RedirectM__Creat__3F672F2C] DEFAULT (getdate())
+[CreatedOnDate] [datetime] NOT NULL CONSTRAINT [DF__RedirectM__Creat__45200882] DEFAULT (getdate())
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[RedirectMessages] ADD CONSTRAINT [PK_RedirectMessages] PRIMARY KEY CLUSTERED  ([MessageId]) ON [PRIMARY]

@@ -4,8 +4,8 @@ CREATE TABLE [dbo].[ExportImportJobLogs]
 [JobId] [int] NOT NULL,
 [Name] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [Value] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
-[Level] [int] NOT NULL CONSTRAINT [DF__ExportImp__Level__0E8EEDA7] DEFAULT ((0)),
-[CreatedOnDate] [datetime] NOT NULL CONSTRAINT [DF__ExportImp__Creat__0F8311E0] DEFAULT (getutcdate())
+[Level] [int] NOT NULL CONSTRAINT [DF__ExportImp__Level__1447C6FD] DEFAULT ((0)),
+[CreatedOnDate] [datetime] NOT NULL CONSTRAINT [DF__ExportImp__Creat__153BEB36] DEFAULT (getutcdate())
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[ExportImportJobLogs] ADD CONSTRAINT [PK_ExportImportJobLogs] PRIMARY KEY CLUSTERED  ([JobLogId]) ON [PRIMARY]

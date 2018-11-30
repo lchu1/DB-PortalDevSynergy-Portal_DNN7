@@ -39,7 +39,7 @@ BEGIN
         IF (@@fetch_status <> -2)
         BEGIN
 
-                        SELECT @message = FirstName+' '+ LastName+', this is an automatically generated notification for a new EOB with NO CHECK that is now available for download from the Community Health Center Network Provider Network Web Portal. You can download this now by going to https://portal.chcnetwork.org.'
+                        SELECT @message = FirstName+' '+ LastName+', this is an automatically generated notification for a new EOB with NO CHECK that is now available for download from the Community Health Center Network Provider Network Web Portal. You can download this now by going to https://connect.chcnetwork.org.'
                         FROM dbo._CHCNWEB_EOBNoCheckMax_Emails
                         Where UserID = @UserID
 						-- -- updated from Karen Matsuoka to Jessica Rojas, 12/10/2013 @from = N'jrojas@chcnetwork.org',

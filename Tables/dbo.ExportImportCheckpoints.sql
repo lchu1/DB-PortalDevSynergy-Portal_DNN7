@@ -7,11 +7,11 @@ CREATE TABLE [dbo].[ExportImportCheckpoints]
 [Stage] [int] NOT NULL,
 [StageData] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
 [Progress] [int] NOT NULL,
-[TotalItems] [int] NOT NULL CONSTRAINT [DF__ExportImp__Total__08D61451] DEFAULT ((0)),
-[ProcessedItems] [int] NOT NULL CONSTRAINT [DF__ExportImp__Proce__09CA388A] DEFAULT ((0)),
+[TotalItems] [int] NOT NULL CONSTRAINT [DF__ExportImp__Total__0E8EEDA7] DEFAULT ((0)),
+[ProcessedItems] [int] NOT NULL CONSTRAINT [DF__ExportImp__Proce__0F8311E0] DEFAULT ((0)),
 [StartDate] [datetime] NULL,
 [LastUpdateDate] [datetime] NULL,
-[Completed] [bit] NULL CONSTRAINT [DF__ExportImp__Compl__0ABE5CC3] DEFAULT ((0))
+[Completed] [bit] NULL CONSTRAINT [DF__ExportImp__Compl__10773619] DEFAULT ((0))
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[ExportImportCheckpoints] ADD CONSTRAINT [PK_ExportImportCheckpoints] PRIMARY KEY CLUSTERED  ([CheckpointId]) ON [PRIMARY]

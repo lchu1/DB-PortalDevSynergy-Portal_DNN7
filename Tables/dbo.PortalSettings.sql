@@ -9,7 +9,7 @@ CREATE TABLE [dbo].[PortalSettings]
 [LastModifiedByUserID] [int] NULL,
 [LastModifiedOnDate] [datetime] NULL,
 [CultureCode] [nvarchar] (10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
-[IsSecure] [bit] NOT NULL CONSTRAINT [DF__PortalSet__IsSec__6C04CB79] DEFAULT ((0))
+[IsSecure] [bit] NOT NULL CONSTRAINT [DF__PortalSet__IsSec__71BDA4CF] DEFAULT ((0))
 ) ON [PRIMARY]
 GO
 ALTER TABLE [dbo].[PortalSettings] ADD CONSTRAINT [PK_PortalSettings] PRIMARY KEY NONCLUSTERED  ([PortalSettingID]) ON [PRIMARY]
